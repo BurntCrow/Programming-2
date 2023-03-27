@@ -1,0 +1,30 @@
+div
+{
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    padding: 0px;
+    justify-content: center;
+    height: 650px;
+    width:25%;
+}
+.one
+{
+    opacity: 1;  
+    float: left;  
+}
+.two
+{
+    opacity: 1;
+    float: left;
+}
+.three
+{
+    opacity: 1;
+    float: left;
+}
+.four
+{
+    opacity: 1;
+    float:left;
+}

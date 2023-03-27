@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="Slideshow.css">
+	</head>
+	<title>Kur mācas</title>
+
+	<style>
+		body {
+		  background-image: url('Ink.jpg');
+		  background-repeat: no-repeat;
+		  background-attachment: fixed; 
+		  background-size: 100% 100%;
+		}
+		</style>
+
+	<body>
+		<div class="one">
+			<link rel="stylesheet" href="StyleOpc.css">
+		
+			  <header>
+			  <h1>&nbsp&nbspKur mācas
+				<br>
+			  </h1>
+			  <nav>
+				<li><a href="C:\Programming\Slavenības.html">Slavenības</a></li>
+				<li><a href="C:\Programming\Index.html">Mājas</a></li>
+				<li><a href="C:\Programming\Veidi.html">Veidi</a></li>
+				<li><a gref="C:\Programming\Vēsture.html">Vēsture</a></li>
+			  </nav>
+			</div>
+
+			<div class="slideshow-container">
+
+				<div class="mySlides fade">
+				  <div class="numbertext">1 / 4</div>
+				  <img src="Dojo.jpg" style="width:100%; height:500px">
+				  <div class="text">Dojo (karate)</div>
+				</div>
+				
+				<div class="mySlides fade">
+				  <div class="numbertext">2 / 4</div>
+				  <img src="Shaolin.jpg" style="width:100%; height:500px">
+				  <div class="text">Šaolin templis</div>
+				</div>
+				
+				<div class="mySlides fade">
+				  <div class="numbertext">3 / 4</div>
+				  <img src="Gym.jpg" style="width:100%; height:500px">
+				  <div class="text">Boksa zāle</div>
+				</div>
+
+				<div class="mySlides fade">
+					<div class="numbertext">4 / 4</div>
+					<img src="Kendo.jpg" style="width:100%; height: 500px">
+					<div class="text">Dojo (kendo)</div>
+				</div>
+				
+				<a class="prev" onclick="plusSlides(-1)">❮</a>
+				<a class="next" onclick="plusSlides(1)">❯</a>
+				
+				</div>
+				<br>
+				
+				<div style="text-align:center">
+				  <span class="dot" onclick="currentSlide(1)"></span> 
+				  <span class="dot" onclick="currentSlide(2)"></span> 
+				  <span class="dot" onclick="currentSlide(3)"></span> 
+				</div>
+				
+				<script>
+				let slideIndex = 1;
+				showSlides(slideIndex);
+				
+				function plusSlides(n) {
+				  showSlides(slideIndex += n);
+				}
+				
+				function currentSlide(n) {
+				  showSlides(slideIndex = n);
+				}
+				
+				function showSlides(n) {
+				  let i;
+				  let slides = document.getElementsByClassName("mySlides");
+				  let dots = document.getElementsByClassName("dot");
+				  if (n > slides.length) {slideIndex = 1}    
+				  if (n < 1) {slideIndex = slides.length}
+				  for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";  
+				  }
+				  for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" active", "");
+				  }
+				  slides[slideIndex-1].style.display = "block";  
+				  dots[slideIndex-1].className += " active";
+				}
+				</script>
+
+				<div>
+					<br>
+					<h1>Daudzveidība</h1>
+					<p>Šādu vietu ir daudz and dažādu tām ir liela daudzveidība atkarībā no cīņas vajadzībām vai drošībai, piemēram, mācoties judo zeme ir ļoti mīksta dēļ visiem metieniem tajā cīņas mākslā. Dažas vietas ir vairāk kulturālas kā šaolin templis citas vietas ir pielāgotas lai varētu visefektīvāk trennēties kā boksa zāles, kuras ir pilnas ar boksa maisiem. Dažas vietas kā Dojo nak no oriģināli no budisma Sākotnēji dōjō bija papildus tempļiem un bija oficiālas mācību vietas jebkuram japāņu mākslas darbam, kas beidzās “- dō”.</p>
+				</div>
+
+	</body>
+	</html>
